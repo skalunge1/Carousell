@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteA]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestA2(failed)">
+    <classes>
+      <class name="comcarousellTestcases.VerifyCarousellHome">
+        <methods>
+          <include name="verifyHomePage"/>
+        </methods>
+      </class> <!-- comcarousellTestcases.VerifyCarousellHome -->
+    </classes>
+  </test> <!-- TestA2(failed) -->
+  <test thread-count="5" name="TestA3(failed)">
+    <classes>
+      <class name="comcarousellTestcases.VerifySenderMessage">
+        <methods>
+          <include name="verifyMessage"/>
+        </methods>
+      </class> <!-- comcarousellTestcases.VerifySenderMessage -->
+    </classes>
+  </test> <!-- TestA3(failed) -->
+  <test thread-count="5" name="TestA4(failed)">
+    <classes>
+      <class name="comcarousellTestcases.VerifyCarousellInbox">
+        <methods>
+          <include name="verifyInboxMsg"/>
+        </methods>
+      </class> <!-- comcarousellTestcases.VerifyCarousellInbox -->
+    </classes>
+  </test> <!-- TestA4(failed) -->
+</suite> <!-- Failed suite [SuiteA] -->

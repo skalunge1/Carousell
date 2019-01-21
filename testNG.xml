@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suit name = "Carousell Test">
-<test name = "Smoke test">
-<classes>
-
-	<class name = "comcarousellTestcases.VerifyLogin"/>
-	<class name = "comcarousellTestcases.VerifyCarousellHome"/>
-	<class name = "comcarousellTestcases.VerifySenderMessage"/>
-	<class name = "comcarousellTestcases.VerifyCarousellInbox"/>
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CarousellSuit">
 	
-</classes>
-</test>
-</suit>
+	<test name="VerifyLogin" allow-return-values="true">
+		<classes>
+			<!-- packagename.Testcase class name -->
+			<class name="comcarousellTestcases.VerifyLogin" />
+		</classes>
+	</test>
+
+	<test name="VerifyCarousellHomePage" allow-return-values="true">
+		<classes>
+			<class name="comcarousellTestcases.VerifyCarousellHome" />
+		</classes>
+	</test>
+
+	<test name="VerifySenderMessage" allow-return-values="true">
+		<classes>
+			<class name="comcarousellTestcases.VerifySenderMessage" />
+		</classes>
+	</test>
+
+	<test name="VerifyCarousellInbox" allow-return-values="true">
+		<classes>
+			<class name="comcarousellTestcases.VerifyCarousellInbox" />
+		</classes>
+	</test>
+
+</suite>
